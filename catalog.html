@@ -131,7 +131,51 @@
             <section class="main-block">
                 <div class="container"> 
                     <aside class="filters">
-                        <!--Форма  -->
+                        <form class="form-filters" method="get" action="#" >
+                            <p>Фильтр</p>
+                            <div class="filter-by-price">
+                                <!--  -->
+                            </div>
+                            <div class="filter-by-firm">
+                                <h2>Производители:</h2>
+                                <ul class="firms">
+                                    <li>
+                                        <input type="checkbox" name="firm-Bosch" id="firmBosch" value="Bosch">
+                                        <label for="firmBosch">Bosch</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="firm-Interskol" id="firmInterskol" value="Интерскол">
+                                        <label for="firmInterskol">Интерскол</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="firm-Makita" id="firmMakita" value="Makita">
+                                        <label for="firmMakita">Makita</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="firm-Dewalt" id="firmDewalt" value="Dewalt">
+                                        <label for="firmDewalt">Dewalt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="firm-Hitachi" id="firmHitachi" value="Hitachi">
+                                        <label for="firmHitachi">Hitachi</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-by-type">
+                                <h2>Питание:</h2>
+                                <ul class="by-type">
+                                    <li>
+                                        <input type="radio" name="type" id="type-accum" value="Аккумуляторные">
+                                        <label for="type-accum">Аккумуляторные</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="type" id="type-network" value="Сетевые">
+                                        <label for="type-network">Сетевые</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="filter-button">Показать</button>
+                        </form>
                     </aside>
                     <div class="catalog-right">
                         <div class="sorting">
@@ -335,7 +379,15 @@
                                     </p>
                                 </li>
                             </ul>
-                        </div> 
+                        </div>
+                        <div class="modal-cart"> 
+                            <p>Товар добавлен в корзину!</p>
+                            <button class="modal-cart-close" type="button" area-label="Закрыть окно"></button>
+                            <div class="modal-cart-button">
+                                <a class="button" href="#">Оформить заказ</a>
+                                <a class="button" href="#">Продолжить покупки</a>
+                            </div>
+                        </div>
                         <div class="pagination">
                             <a class="pagination-current">1</a>
                             <a href="#">2</a>
@@ -418,19 +470,16 @@
                         Все права защищены           
                     </p> 
                     <ul class="footer-social">
-                        <li>
-                            <a href="#">
-                                Вконтакте
+                       <li>
+                            <a href="#" aria-label="Техномарт в Вконтакте">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Facebook
+                            <a href="#" aria-label="Техномарт в Facebook">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Instagram
+                            <a href="#" aria-label="Техномарт в Instagram">
                             </a>
                         </li>
                     </ul>
