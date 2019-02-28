@@ -16,8 +16,7 @@
                     </a>
                     <form class="form-search" action="#" method="get" enctype="multipart/form-data">
                         <label class="form-search-label" for="search"></label>
-                        <input type="search" id="search" class="form-search-input" value="Поиск:" onfocus="this.value='Перфоратор'" onblur="if (this.value !='Поиск:')
-                        {this.value='Поиск:'}">
+                        <input type="search" id="search" class="form-search-input" placeholder="Поиск:">
                     </form>
                     <a class="header-bookmarks" href="#">
                         Закладки: 0
@@ -35,7 +34,7 @@
                     <div class="header-info">
                         <p class="header-info-text">
                             Интернет-магазин 
-                            строительных материалов 
+                            строительных материалов <br>
                             и инструментов для ремонта
                         </p>
                     </div>
@@ -163,11 +162,9 @@
                 </div>
             </section>
             <div class="popular-goods-headline-block">
-                <div class="container">
-                    <div class="popular-goods-headline-block-flex">
-                        <h2 class="popular-goods-headline"> Популярные товары: </h2>
-                        <a class="button popular-goods-headline-button" href="#"> Все популярные товары </a>
-                    </div>
+                <div class="popular-goods-headline-flex container">
+                    <h2 class="popular-goods-headline"> Популярные товары: </h2>
+                    <a class="button popular-goods-headline-button" href="#"> Все популярные товары </a>
                 </div>
             </div>
             <section class="popular-goods-block">  
@@ -240,11 +237,9 @@
                 </div>
             </section>
             <div class="manufacturers-headline-block">
-                <div class="container">
-                    <div class="manufacturers-headline-block-flex">
-                        <h2 class="manufacturers-headline"> Популярные производители: </h2>
-                        <a class="button manufacturers-headline-button" href="#"> Все производители </a>
-                    </div>
+                <div class="manufacturers-headline-flex container">
+                    <h2 class="manufacturers-headline"> Популярные производители: </h2>
+                    <a class="button manufacturers-headline-button" href="#"> Все производители </a>
                 </div>
             </div>
             <section class="manufacturers">
@@ -342,9 +337,9 @@
                     </div>    
                 </div>
             </section>
-            <div class="about-company-block">
+            <section class="about-company-block">
                 <div class="about-company-flex container">
-                    <section class="about-company">
+                    <div class="about-company">
                         <h2 class="about-company-headline">Компания «Техномарт»</h2>
                         <p class="about-company-text">
                             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -360,17 +355,17 @@
                             <li class="about-company-list-item"> ЖелДорЭкспедиция </li>
                         </ul>
                         <a href="#" class="button"> Подробнее о компании </a>
-                    </section>
-                    <section class="company-contacts">
+                    </div>
+                    <div class="company-contacts">
                         <h2 class="company-contacts-headline"> Контакты </h2>
                         <p class="company-contacts-text"> Вы можете забрать товар сами, заехав в наш офис: </p>
                         <a class="company-contacts-map" href="#">
                             <img class="company-contacts-img" src="img/map.jpg" width="300" height="158" alt="Карта">
                         </a>
                         <a class="button company-contacts-button" href="#"> Заблудились? Напишите нам! </a>
-                    </section>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="main-footer">
             <div class="footer-top">
@@ -450,24 +445,22 @@
         </footer>
         <div class="modal modal-map">
             <button type="button" class="modal-map-close" aria-label="Закрыть карту"></button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="970" height="476" class="modal-map-img" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="940" height="446" class="modal-map-img" allowfullscreen></iframe>
         </div>
         <div class="modal modal-write-us">
             <button type="button" class="modal-write-us-close" aria-label="Закрыть форму"></button>   
-            <form class="form-write-us" method="post" action="#" >
-                <div class="write-us-input">   
-                    <label for="username">
-                        Ваше имя:
-                    </label>
-                    <input type="text" name="name" id="username" placeholder="Введите имя">
-                    <label for="email">
-                        Ваш e-mail:
-                    </label>
-                    <input type="text" name="mail" id="email" placeholder="Введите адрес электронной почты">
-                </div>
-                <div class="write-us-button">
-                    <button class="button" type="submit" aria-label="Отправить форму">Отправить</button>
-                </div>
+                <form class="modal-write-us-form" method="post" action="#" >  
+                    <div class="modal-write-us-input-block">
+                        <label class="modal-write-us-label" for="username"> Ваше имя: </label>
+                        <label class="modal-write-us-label" for="email"> Ваш e-mail: </label>
+                        <input class="modal-write-us-input" type="text" name="name" id="username" placeholder="Имя Фамилия">
+                        <input class="modal-write-us-input" type="text" name="mail" id="email" placeholder="email@example.com">
+                        <label class="modal-write-us-label" for="text-"> Текст письма: </label>
+                        <input class="modal-write-us-input" type="textarea" name="text-" id="text-" placeholder="В свободной форме">
+                    </div>
+                    <div class="modal-write-us-button">
+                        <button class="button modal-write-us-submit" type="submit" aria-label="Отправить форму">Отправить</button>
+                    </div>
             </form>
         </div>
     </body>
