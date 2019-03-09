@@ -911,7 +911,7 @@ MAIN
 }
 
 .popular-goods-list {
-    margin: 0;
+    margin: 0 0 0 -20px;
 }
 
 .catalog-item {
