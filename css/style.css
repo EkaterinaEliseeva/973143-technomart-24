@@ -20,11 +20,9 @@ img {
 }
 
 .container {
-
     width:940px;
     margin: 0 auto;
     padding: 0 10px;
-
 }
 
 
@@ -34,7 +32,6 @@ img {
     top: 0;
     right: 0;
     z-index: 1;
-
     width: 59px;
     height: 59px;
     background-image: url(../img/flag.png);
@@ -46,7 +43,6 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-
     width: 59px;
     height: 59px;
     background-image: url(../img/flag.png);
@@ -70,9 +66,6 @@ img {
     border-radius: 3px;
 }
 
-
-
-
 .button:hover {
     background-color: #ca2c37;
 }
@@ -81,16 +74,6 @@ img {
     background-color: #ba2732;
 }
 
-
-/* 
-.
-.
-HEADER
-.
-.
- */
-
-
 .header-top {
     margin: 0;
     line-height: 18px; 
@@ -98,13 +81,11 @@ HEADER
     width: 100%;
     min-height: 42px;
     background-color: #293449;
-
 }
 
 .header-top-flex {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     flex-grow: 1;
 }
 
@@ -122,6 +103,7 @@ HEADER
 .header-logo:hover {
   background-color: #ca2c37;
 }
+
 .header-logo:active {
     background-color: #ba2732;
 }
@@ -206,7 +188,6 @@ HEADER
 }
 
 .form-search-input:focus {
-    
     color: #000000;
     background-color: #ffffff;
 }
@@ -308,12 +289,6 @@ HEADER
 .header-bookmarks-text-active{
     background-color: #ee3643
 }
-
-
-
-
-
-
 
 .header-bottom {
     margin: 0;
@@ -449,7 +424,6 @@ HEADER
     text-align: center;
     padding: 12px 24px 12px 22px;
     background-color: #ffffff; 
-
 }
 
 
@@ -483,7 +457,6 @@ HEADER
     padding: 0 23px 0 9px;
     color: #000000;
 }
-
 
 
 .user-navigation-profile:hover .user-navigation-fill,
@@ -583,19 +556,6 @@ HEADER
     background-color: #1d2739;
 }
 
-/* 
-.
-.
-.
-.
-.
-MAIN
-.
-.
-.
-.
-.
- */
 
 .actual {
     font-size: 14px;
@@ -798,8 +758,6 @@ MAIN
 }
 
 
-
-
 .actual-list-slide:nth-of-type(1) {
     background-image: url(../img/slider-perforator.jpg);
 }
@@ -866,11 +824,6 @@ MAIN
     margin: 100px 0 22px 26px;
     padding: 11px 45px 9px 49px;
 }
-
-
-
-
-
 
 
 .popular-goods-headline-flex {
@@ -1125,14 +1078,6 @@ MAIN
     border-color: rgba(50, 66, 92, 0.302);
 }
 
-
-
-
-
-
-
-
-
 .manufacturers-headline-flex {
     display: flex;
     justify-content: space-between;
@@ -1199,11 +1144,6 @@ MAIN
 .manufacturers-item:active .manufacturers-logo {
     opacity: 0.3;
 }
-
-
-
-
-
 
 
 .services-block {
@@ -1368,7 +1308,6 @@ MAIN
 } 
 
 
-
 .services-slider-radio:nth-of-type(1):checked ~ .services-slider-button .services-slider-label:nth-of-type(1),
 .services-slider-radio:nth-of-type(2):checked ~ .services-slider-button .services-slider-label:nth-of-type(2),
 .services-slider-radio:nth-of-type(3):checked ~ .services-slider-button .services-slider-label:nth-of-type(3) {
@@ -1458,10 +1397,6 @@ MAIN
 }
 
 
-
-
-
-
 .company-contacts {
     width: 300px;
 }
@@ -1505,13 +1440,6 @@ MAIN
     border: 0px;
 }
 
-/*
-.
-.
-CATALOG
-.
-.
- */
 
 .inner-page .header-bottom {
     margin-bottom: 20px;
@@ -1591,9 +1519,6 @@ CATALOG
     display: flex;
     justify-content: space-between;
 }
-
-
-
 
 
 .filters {
@@ -1993,6 +1918,11 @@ CATALOG
     border-bottom: 1px solid transparent;
 }
 
+.sorting-parameters-link-active {
+    color: #ee3643;
+    border-bottom: 1px solid transparent;
+}
+
 .sorting-direction {
     display: inline-block;
     vertical-align: middle;
@@ -2013,13 +1943,6 @@ CATALOG
     position: absolute;
     top: -12px;
 
-    /* width: 20px;
-    height: 20px;
-    
-    background-image: url(../img/icon-up-dir.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0; */
-
     border: 6px solid transparent;	
     border-bottom: 11px solid #c5c5c5;
 }
@@ -2039,7 +1962,6 @@ CATALOG
     border-top: 11px solid #c5c5c5;
 }
 
-
 .sorting-asc:hover::before {
     border-bottom: 11px solid #231f20;
 }
@@ -2056,14 +1978,17 @@ CATALOG
     border-top: 11px solid #ee3643;
 }
 
+.sorting-ask-active::before {
+    border-bottom: 11px solid #ee3643;
+}
 
+.sorting-desc-active::before {
+    border-bottom: 11px solid #ee3643;
+}
 
 .catalog-right {
     width: 700px;
 }
-
-
-
 
 .pagination {
     display: flex;
@@ -2114,9 +2039,6 @@ CATALOG
     border: 0.5px #ee3643 solid;
 }
 
-
-
-
 .info-about-perforator {
     background-color: #f2f6f8;
     width: 100%;
@@ -2146,13 +2068,6 @@ CATALOG
 
 }
 
-/*
-.
-.
- FOOTER
-.
-.
- */
 
 .footer-top {
     display: flex;
@@ -2486,11 +2401,6 @@ CATALOG
     background-repeat: no-repeat;
 }
 
-
-
-
-
-
 .modal-map {
     width: 940px;
     height: 446px;
@@ -2513,11 +2423,8 @@ CATALOG
     background-image: url(../img/icon-close.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-color: transparent;
 }
-
-
-
-
 
 .modal-cart {
     top: 100px;
@@ -2597,6 +2504,34 @@ CATALOG
 }
 
 
+.modal {
+    z-index: 2;
+    display: none;
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 50%, 80% {transform: translateX(10px);}
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
@@ -2614,9 +2549,3 @@ CATALOG
     overflow: hidden;
 }
 
-
-.modal-map,
-.modal-write-us,
-.modal-cart {
-   display: none;
-}

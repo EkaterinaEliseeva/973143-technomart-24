@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Техномарт</title>
+        <title> HTML Academy: Техномарт </title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic">
@@ -160,7 +160,7 @@
                                 <h2 class="form-filters-headline">Производители:</h2>
                                 <ul class="filter-by-firm-list">
                                     <li class="filter-by-firm-item">
-                                        <input class="filter-by-firm-item-input" type="checkbox" name="firm-Bosch" id="firmBosch" value="Bosch">
+                                        <input class="filter-by-firm-item-input" type="checkbox" name="firm-Bosch" id="firmBosch" value="Bosch" checked>
                                         <label class="filter-by-firm-item-label" for="firmBosch">Bosch</label>
                                     </li>
                                     <li class="filter-by-firm-item">
@@ -168,7 +168,7 @@
                                         <label class="filter-by-firm-item-label" for="firmInterskol">Интерскол</label>
                                     </li>
                                     <li class="filter-by-firm-item">
-                                        <input class="filter-by-firm-item-input" type="checkbox" name="firm-Makita" id="firmMakita" value="Makita">
+                                        <input class="filter-by-firm-item-input" type="checkbox" name="firm-Makita" id="firmMakita" value="Makita" checked>
                                         <label class="filter-by-firm-item-label" for="firmMakita">Makita</label>
                                     </li>
                                     <li class="filter-by-firm-item">
@@ -185,7 +185,7 @@
                                 <h2 class="form-filters-headline">Питание:</h2>
                                 <ul class="filter-by-type-list">
                                     <li class="filter-by-type-item">
-                                        <input class="filter-by-type-item-input" type="radio" name="type" id="type-accum" value="Аккумуляторные">
+                                        <input class="filter-by-type-item-input" type="radio" name="type" id="type-accum" value="Аккумуляторные" checked>
                                         <label class="filter-by-type-item-label" for="type-accum">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-by-type-item">
@@ -202,7 +202,7 @@
                             <span class="sorting-heading">Сортировка:</span>
                             <ul class="sorting-parameters">
                                 <li class="sorting-parameters-item">
-                                    <a class="sorting-parameters-link sorting-by-price" href="#">По цене</a>
+                                    <a class="sorting-parameters-link sorting-by-price sorting-parameters-link-active" href="#">По цене</a>
                                 </li>
                                 <li class="sorting-parameters-item">
                                     <a class="sorting-parameters-link sorting-by-type" href="#">По типу</a>
@@ -213,7 +213,7 @@
                             </ul>
                             <ul class="sorting-direction">
                                 <li>
-                                    <a href="#" class="sorting-asc">
+                                    <a href="#" class="sorting-asc sorting-ask-active">
                                         <span class="visually-hidden">По возрастанию</span>
                                     </a>
                                 </li>
@@ -379,7 +379,8 @@
             <div class="info-about-perforator">
                 <div class="container">
                     <h2 class="info-about-perforator-heading"> ПАРА СЛОВ О ПЕРФОРАТОРАХ </h2>
-                    <p class="info-about-perforator-text"> Перфоратор — универсальный строительный инструмент. 
+                    <p class="info-about-perforator-text"> 
+                        Перфоратор — универсальный строительный инструмент. 
                         Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
                         Существуют электромеханические и пневматические перфораторы. 
                         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
@@ -473,5 +474,31 @@
                 <a class="button modal-cart-button-buy" href="#"> Продолжить покупки </a>
             </div>
         </div>
+        <script> 
+            var cartlink = document.querySelectorAll(".catalog-item-action-buy");
+            var cartpopup = document.querySelector(".modal-cart");
+            var cartclose = document.querySelector(".modal-cart-close");
+
+            for (var i=0; i<cartlink.length; i++) {
+                cartlink[i].addEventListener("click", function(evt) {
+                    evt.preventDefault();
+                    cartpopup.classList.add("modal-show");
+                });
+            };
+
+            cartclose.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            cartpopup.classList.remove("modal-show");
+            });
+
+            window.addEventListener("keydown", function (evt) {
+                if (evt.keyCode === 27) {
+                    evt.preventDefault();
+                    if (cartpopup.classList.contains("modal-show")) {
+                        cartpopup.classList.remove("modal-show");
+                    }
+                }
+            });
+        </script>
     </body>
 </html>
