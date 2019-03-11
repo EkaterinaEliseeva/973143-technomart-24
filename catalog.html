@@ -474,31 +474,6 @@
                 <a class="button modal-cart-button-buy" href="#"> Продолжить покупки </a>
             </div>
         </div>
-        <script> 
-            var cartlink = document.querySelectorAll(".catalog-item-action-buy");
-            var cartpopup = document.querySelector(".modal-cart");
-            var cartclose = document.querySelector(".modal-cart-close");
-
-            for (var i=0; i<cartlink.length; i++) {
-                cartlink[i].addEventListener("click", function(evt) {
-                    evt.preventDefault();
-                    cartpopup.classList.add("modal-show");
-                });
-            };
-
-            cartclose.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            cartpopup.classList.remove("modal-show");
-            });
-
-            window.addEventListener("keydown", function (evt) {
-                if (evt.keyCode === 27) {
-                    evt.preventDefault();
-                    if (cartpopup.classList.contains("modal-show")) {
-                        cartpopup.classList.remove("modal-show");
-                    }
-                }
-            });
-        </script>
+        <script src="js/index.js"> </script>
     </body>
 </html>

@@ -531,7 +531,6 @@ img {
 
     background-color: #32425c;
     padding: 0 20px;
-    height: 55px;
     box-shadow: 0 5px 0 0 #293449;
     margin: auto;
 } 
@@ -545,7 +544,7 @@ img {
     font-size: 17px;
     line-height: 17px;
     color :#ffffff;
-    padding: 18px 31px 19px 31px;
+    padding: 19px 31px 19px 31px;
 }
 
 .header-navigation-list-link:hover {
