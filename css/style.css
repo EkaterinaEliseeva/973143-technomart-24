@@ -6,6 +6,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
+
 }
 
 a {
@@ -317,8 +318,8 @@ img {
 .header-contacts-phone {
     display: block;
     position: relative;
-    width: 264px;
-    padding: 9px 0;
+    width: 244px;
+    padding: 9px 0 9px 20px;
     font-size: 21px;
     line-height: 21px;
     color: #ee434f;
@@ -355,7 +356,7 @@ img {
 }
 
 .inner-page .user-navigation {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .user-navigation-login,
@@ -474,7 +475,7 @@ img {
     color: rgba(50, 66, 92, 0.302);
 }
 
-.inner-page .user-navigation-point {
+.user-navigation-point {
     margin: 8px auto;
     width: 5px;
     height: 5px;
@@ -778,7 +779,7 @@ img {
 .popular-goods-headline-button {
     text-align: center;
     min-width: 201px;
-    padding: 10px 21px;
+    padding: 10px 26px;
     margin-right: 24px;
 }
 /* Каталог */
@@ -997,7 +998,7 @@ img {
 
 .manufacturers-headline-button {
     text-align: center;
-    padding: 10px 21px;
+    padding: 10px 26px;
     margin-right: 24px;
     min-width: 201px;
 }
@@ -1009,7 +1010,7 @@ img {
     background-color: #ffffff; 
     list-style: none;
     padding: 0;
-    margin: 0 0 72px 0;
+    margin: 0 0 65px 0;
 }
 
 .manufacturers-item {
@@ -1060,13 +1061,13 @@ img {
     font-weight: 400;
     color: #000000;
     text-transform: uppercase;
-    padding: 60px 0 0 0;
-    margin: 0 0 27px 0;
+    padding: 68px 0 0 0;
+    margin: 0 0 24px 0;
 }
 
 .services-text {
     width: 400px;
-    padding-bottom: 63px;
+    padding-bottom: 56px;
 }
 /* Слайдер 2 */
 .services-slider-block {
@@ -1081,11 +1082,11 @@ img {
     line-height: 30px;
     font-weight: 400;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 98px;
 }
 
 .services-slider-button::after {
-    content:"";
+    content: "";
     position: absolute;
     top: -52px;
     right: 0;
@@ -1103,7 +1104,7 @@ img {
 
 .services-slider-label {
     display: block;
-    padding: 13px 0 13px 22px;
+    padding: 16px 140px 16px 22px;
     color: #ffffff;
     background-color: #32425c;
 }
@@ -1124,7 +1125,7 @@ img {
     font-weight: 400;
     color: #32425c;
     text-transform: uppercase;
-    margin: 0 0 23px 0;
+    margin: 4px 0 32px 0;
     padding: 0;
 }
 
@@ -1143,7 +1144,7 @@ img {
 .services-slide:nth-of-type(1)::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 19px;
     right: 0;
     width: 468px;
     height: 261px;    
@@ -1202,7 +1203,7 @@ img {
 .about-company-flex {
     display: flex;
     justify-content: space-between;
-    padding: 76px 10px;
+    padding: 78px 10px 74px 10px;
     margin-bottom: 10px;
     font-family: "Cuprum","Arial", sans-serif;
     font-size: 18px;
@@ -1230,7 +1231,7 @@ img {
     font-family: "PT Sans","Arial",sans-serif;
     font-weight: 400;
     color:#000000; 
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .about-company-text:last-of-type {
@@ -1282,7 +1283,7 @@ img {
     font-weight: 400;
     color:#000000;    
     width: 220px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .company-contacts-map {
@@ -1290,7 +1291,7 @@ img {
 }
 
 .company-contacts-button {
-    padding: 10px;
+    padding: 10px 10px 10px 12px;
     width: 280px;
     text-align: center;
 }
@@ -1315,7 +1316,7 @@ img {
 .breadcrumbs-item {
     display: inline-block; 
     vertical-align: middle;    
-    padding: 0 18px;
+    padding: 0 20px;
     position: relative;
 }
 
@@ -1390,14 +1391,14 @@ img {
     border-radius: 3px;
     background-color: #f7f3ec;
     width: 100%;
-    margin: 0 0 7px 0;
+    margin: 0 0 6px 0;
 }
 
 .form-filters-headline {
     font-size: 17px;
     line-height: 30px;
     margin: 0;
-    padding: 7px 0 12px 0;
+    padding: 6px 0 12px 0;
     width: 100%;
 }
 
@@ -1518,7 +1519,7 @@ img {
 .filter-by-firm {
     position: relative;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .filter-by-firm-list {
@@ -1540,8 +1541,7 @@ img {
     background-color: #e5e5e5;
 }
 
-.filter-by-firm-item,
-.filter-by-type-item {
+.filter-by-firm-item {
     margin-bottom: 20px;
     padding: 0;
 }
@@ -1603,7 +1603,12 @@ img {
     line-height: 20px;
     list-style: none;
     margin: 0;
-    padding: 0 0 62px 0;
+    padding: 2px 0 58px 0;
+}
+
+.filter-by-type-item {
+    margin-bottom: 21px;
+    padding: 0;
 }
 
 .filter-by-type-item-label {
@@ -1648,7 +1653,7 @@ img {
 
 .filter-button {
     display: block;
-    padding: 10px 40px;
+    padding: 10px 39px;
     font-size: 13px;
     text-transform: uppercase;
     background-color: #ffffff;
@@ -1837,7 +1842,7 @@ img {
     margin: 0;
     color: #000000;
     text-transform: uppercase; 
-    padding: 68px 0 26px 1px;
+    padding: 66px 0 26px 1px;
 }
 
 .info-about-perforator-text {
@@ -1920,7 +1925,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 540px;
-    margin: 36px 0 34px 0;
+    margin: 38px 0 34px 0;
 }
 
 .footer-top-additional-nav {
