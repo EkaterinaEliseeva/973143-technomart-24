@@ -12,11 +12,11 @@
             <div class="header-top">
                 <div class="container header-top-flex">
                     <a class="header-logo">
-                        <img class="header-logo-img" src="img/logo.svg" alt="Техномарт">
+                        <img class="header-logo-img" src="img/logo.svg" alt="Техномарт" width="110" height="18">
                     </a>
                     <form class="form-search" action="#" method="get" enctype="multipart/form-data">
-                        <label class="form-search-label" for="search"></label>
-                        <input type="search" id="search" class="form-search-input" placeholder="Поиск:">
+                        <input type="search" id="search-form" class="form-search-input" placeholder="Поиск:">
+                        <label class="form-search-label" for="search-form"></label>
                     </form>
                     <a class="header-bookmarks" href="#">
                         <span class="header-bookmarks-text"> Закладки: 0 </span>
@@ -48,9 +48,9 @@
                     </div>
                     <div class="user-navigation">
                         <a class="user-navigation-login" href="#">
-                            Войти
+                            <svg class="user-navigation-login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path class="user-navigation-fill" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="user-navigation-fill" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                            <span class="user-navigation-login-text"> Войти </span>
                         </a>
-                        <span class="user-navigation-point"></span>
                         <a class="user-navigation-registration" href="#">
                             Регистрация
                         </a>
@@ -165,8 +165,8 @@
                     </div>
                 </div>
             </section>
-            <div class="popular-goods-headline-block">
-                <div class="popular-goods-headline-flex container">
+            <div class="popular-goods-headline-block container">
+                <div class="popular-goods-headline-flex">
                     <h2 class="popular-goods-headline"> Популярные товары: </h2>
                     <a class="button popular-goods-headline-button" href="#"> Все популярные товары </a>
                 </div>
@@ -182,7 +182,7 @@
                                 <h3 class="catalog-item-title"> Перфоратор Bosch BFG 9000 </h3>
                             </a>
                             <p class="catalog-item-action">
-                                <a class="catalog-item-action-buy" href="#"> Купить </a>
+                                <a class="catalog-item-action-buy" href="cart.html"> Купить </a>
                                 <a class="catalog-item-action-bookmarks" href="#"> В закладки </a>
                             </p>
                             <p class="catalog-item-price">
@@ -198,7 +198,7 @@
                                 <h3 class="catalog-item-title"> Перфоратор Bosch BFG 3000 </h3>
                             </a>
                             <p class="catalog-item-action">
-                                <a class="catalog-item-action-buy" href="#"> Купить </a>
+                                <a class="catalog-item-action-buy" href="cart.html"> Купить </a>
                                 <a class="catalog-item-action-bookmarks" href="#"> В закладки </a>
                             </p>
                             <p class="catalog-item-price">
@@ -214,7 +214,7 @@
                                 <h3 class="catalog-item-title"> Перфоратор Bosch BFG 6000 </h3>
                             </a>
                             <p class="catalog-item-action">
-                                <a class="catalog-item-action-buy" href="#"> Купить </a>
+                                <a class="catalog-item-action-buy" href="cart.html"> Купить </a>
                                 <a class="catalog-item-action-bookmarks" href="#"> В закладки </a>
                             </p>
                             <p class="catalog-item-price">
@@ -230,7 +230,7 @@
                                 <h3 class="catalog-item-title"> Перфоратор Bosch BFG 2000 </h3>
                             </a>
                             <p class="catalog-item-action">
-                                <a class="catalog-item-action-buy" href="#"> Купить </a>
+                                <a class="catalog-item-action-buy" href="cart.html"> Купить </a>
                                 <a class="catalog-item-action-bookmarks" href="#"> В закладки </a>
                             </p>
                             <p class="catalog-item-price">
@@ -240,8 +240,8 @@
                     </ul>
                 </div>
             </section>
-            <div class="manufacturers-headline-block">
-                <div class="manufacturers-headline-flex container">
+            <div class="manufacturers-headline-block container">
+                <div class="manufacturers-headline-flex">
                     <h2 class="manufacturers-headline"> Популярные производители: </h2>
                     <a class="button manufacturers-headline-button" href="#"> Все производители </a>
                 </div>
@@ -363,10 +363,10 @@
                     <div class="company-contacts">
                         <h2 class="company-contacts-headline"> Контакты </h2>
                         <p class="company-contacts-text"> Вы можете забрать товар сами, заехав в наш офис: </p>
-                        <a class="company-contacts-map" href="#">
+                        <a class="company-contacts-map" href="map.html">
                             <img class="company-contacts-img" src="img/map.jpg" width="300" height="158" alt="Карта">
                         </a>
-                        <a class="button company-contacts-button" href="#"> Заблудились? Напишите нам! </a>
+                        <a class="button company-contacts-button" href="writeus.html"> Заблудились? Напишите нам! </a>
                     </div>
                 </div>
             </section>
@@ -447,9 +447,9 @@
                 </div>
             </div>
         </footer>
-        <div class="modal modal-map">
+        <div class="modal modal-map modal-map-img">
             <button type="button" class="modal-map-close" aria-label="Закрыть карту"></button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="940" height="446" class="modal-map-img" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="940" height="446" class="modal-map-iframe visually-hidden" allowfullscreen></iframe>
         </div>
         <div class="modal modal-write-us">
             <button type="button" class="modal-write-us-close" aria-label="Закрыть форму"></button>   
