@@ -1195,14 +1195,13 @@ img {
 .services-slider-button::after {
     content: "";
     position: absolute;
-    top: -52px;
-    right: 0;
+    top: -43px;
+    left: 230px;
     width: 10px;
     height: 272px;
     background-image: url(../img/service-shadow.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-    opacity: 0.5;
 }
 
 .services-slider-radio {
@@ -1211,8 +1210,8 @@ img {
 
 .services-slider-label {
     display: block;
-    padding: 16px 20px 16px 22px;
-    min-width: 198px;
+    padding: 16px 0 16px 22px;
+    width: 218px;
     color: #ffffff;
     background-color: #32425c;
 }
@@ -1276,7 +1275,7 @@ img {
 .services-slide:nth-of-type(3)::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     right: -10px;
     width: 465px;
     height: 285px;   
