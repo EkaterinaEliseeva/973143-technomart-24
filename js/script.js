@@ -15,7 +15,7 @@ try {
     storageEmail = localStorage.getItem("inputEmail");
 } catch (err) {
     isStorageSupport = false;
-}
+};
 
 if (link) link.addEventListener("click", function(evt) {
     evt.preventDefault(); 
@@ -65,7 +65,6 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-
 var mapLink = document.querySelector(".company-contacts-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".modal-map-close");
@@ -83,7 +82,6 @@ if (mapClose) mapClose.addEventListener("click", function(evt) {
     mapPopup.classList.remove("modal-show");
     mapPopup.classList.add("modal-map-img");
 });
-
 
 var cartLink = document.querySelectorAll(".catalog-item-action-buy");
 var cartPopup = document.querySelector(".modal-cart");
