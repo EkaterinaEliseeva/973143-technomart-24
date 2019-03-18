@@ -375,10 +375,9 @@ img {
 }
 /* Пользовательское меню */
 .user-navigation {
-    width: 300px;
+    width: 330px;
     font-size: 21px;
     line-height: 21px;
-    margin-left: 50px;
 }
 
 .inner-page .user-navigation {
@@ -401,7 +400,7 @@ img {
     padding: 12px 24px 12px 14px; 
     text-align: center;
     background-color: #ffffff; 
-    margin-right: 10px;
+    margin: 0 0 0 50px;
 }
 
 .user-navigation-login-icon {
@@ -418,10 +417,11 @@ img {
 } 
 
 .user-navigation-registration {
+    float: right;
+    margin: 0 0 0 10px;
     text-align: center;
     padding: 12px 24px 12px 24px;
     background-color: #ffffff; 
-    float: right;
 }
 
 .user-navigation-login:hover,
@@ -547,7 +547,7 @@ img {
         flex-wrap: wrap;
     list-style: none;
     background-color: #32425c;
-    padding: 0 18px;
+    padding: 0 17px 0 19px;
     -webkit-box-shadow: 0 5px 0 0 #293449;
             box-shadow: 0 5px 0 0 #293449;
     margin: 0;
@@ -895,6 +895,7 @@ img {
     background-color: #ffffff;
     display: block;
     max-width: 180px;
+    padding: 0 20px;
 }
 
 .catalog-item-image {
@@ -905,7 +906,7 @@ img {
 
 .catalog-item-title {
     margin: 0;
-    padding: 1px 0 40px 28px;
+    padding: 1px 0 40px 0;
     font-family: "PT Sans","Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -2074,7 +2075,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 540px;
+    width: 546px;
     margin: 38px 0 34px 0;
 }
 
@@ -2086,7 +2087,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0;
-    width: 540px;
+    width: 556px;
 }
 
 .footer-top-additional-nav-link {
