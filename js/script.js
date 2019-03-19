@@ -70,12 +70,19 @@ var mapPopup = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".modal-map-close");
 var mapIframe = document.querySelector(".modal-map-iframe");
 
-if (mapLink) mapLink.addEventListener("click", function(evt) {
+if (mapIframe) {
+    if (mapLink) mapLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
     mapPopup.classList.remove("modal-map-img");
     mapIframe.classList.remove("visually-hidden");
-});
+    });
+} else {
+    if (mapLink) mapLink.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+        });
+}
 
 if (mapClose) mapClose.addEventListener("click", function(evt) {
     evt.preventDefault();

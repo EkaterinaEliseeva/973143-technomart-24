@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/min-styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic">
     </head>
     <body>
@@ -18,15 +18,9 @@
                         <input type="search" id="search-form" class="form-search-input" placeholder="Поиск:">
                         <label class="form-search-label" for="search-form"></label>
                     </form>
-                    <a class="header-bookmarks" href="#">
-                        <span class="header-bookmarks-text"> Закладки: 0 </span>
-                    </a>
-                    <a class="header-cart" href="#">
-                        <span class="header-cart-text"> Корзина: 0 </span> 
-                    </a>
-                    <a class="header-order" href="#">
-                        <span class="header-order-text"> Оформить заказ </span>
-                    </a>
+                    <a class="header-bookmarks" href="#"> Закладки: 0 </a>
+                    <a class="header-cart" href="#"> Корзина: 0 </a>
+                    <a class="header-order" href="#"> Оформить заказ </a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -34,8 +28,8 @@
                     <div class="header-info">
                         <p class="header-info-text">
                             Интернет-магазин 
-                            строительных материалов <br>
-                            и инструментов для ремонта
+                            строительных материалов
+                            и&nbsp;инструментов для ремонта
                         </p>
                     </div>
                     <div class="header-contacts">
@@ -122,8 +116,8 @@
                             <input class="actual-list-slider-radio" type="radio" name="actual-slider" id="perforator" checked>
                             <input class="actual-list-slider-radio" type="radio" name="actual-slider" id="drill">
                             <div class="actual-list-slider-labels">
-                                <label class="actual-list-slider-label" for="perforator"></label>
-                                <label class="actual-list-slider-label" for="drill"></label>
+                                <label class="actual-list-slider-label" for="perforator" tabindex="0"></label>
+                                <label class="actual-list-slider-label" for="drill" tabindex="0"></label>
                             </div>
                             <div class="actual-list-slider">
                                 <div class="actual-list-slide">
@@ -132,8 +126,12 @@
                                         <p class="actual-list-slider-text"> Настоящие мужские игрушки </p>
                                     </div>
                                     <div class="actual-list-slider-arrows">
-                                        <a class="actual-list-slider-left-arrow" href="#"></a>
-                                        <a class="actual-list-slider-right-arrow" href="#"></a>
+                                        <a class="actual-list-slider-left-arrow" href="#">
+                                            <span class="visually-hidden"> Стрелка назад </span>
+                                        </a>
+                                        <a class="actual-list-slider-right-arrow" href="#">
+                                            <span class="visually-hidden"> Стрелка вперед </span>
+                                        </a>
                                     </div>
                                     <a class="button actual-list-button" href="catalog.html"> Открыть каталог </a>
                                 </div> 
@@ -375,7 +373,7 @@
             <div class="footer-top">
                 <div class="footer-top-flex container">
                     <a class="footer-top-logo">
-                        <img class="footer-top-logo-img" src="img/footer-logo.svg" alt="Техномарт">
+                        <img class="footer-top-logo-img" src="img/footer-logo.svg" alt="Техномарт" width="136" height="22">
                     </a>
                     <ul class="footer-top-nav">
                         <li>
@@ -467,6 +465,6 @@
                     </div>
             </form>
         </div>
-        <script src="js/min-script.js"> </script>
+        <script src="js/script.js"> </script>
     </body>
 </html>

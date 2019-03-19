@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title> HTML Academy: Техномарт </title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/min-styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic">
     </head>
     <body class="inner-page">
@@ -18,15 +18,9 @@
                         <input type="search" id="search-form" class="form-search-input" placeholder="Поиск:">
                         <label class="form-search-label" for="search-form"></label>
                     </form>
-                    <a class="header-bookmarks" href="#">
-                        <span class="header-bookmarks-text"> Закладки: 0 </span>
-                    </a>
-                    <a class="header-cart" href="#">
-                        <span class="header-cart-text header-cart-text-active"> Корзина: 10 </span> 
-                    </a>
-                    <a class="header-order" href="#">
-                        <span class="header-order-text"> Оформить заказ </span>
-                    </a>
+                    <a class="header-bookmarks" href="#"> Закладки: 0 </a>
+                    <a class="header-cart header-cart-active" href="#"> Корзина: 10 </a>
+                    <a class="header-order" href="#"> Оформить заказ </a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -34,8 +28,8 @@
                     <div class="header-info">
                         <p class="header-info-text">
                             Интернет-магазин 
-                            строительных материалов <br>
-                            и инструментов для ремонта
+                            строительных материалов
+                            и&nbsp;инструментов для ремонта
                         </p>
                     </div>
                     <div class="header-contacts">
@@ -53,12 +47,11 @@
                             </a>
                         </div>
                         <ul class="user-navigation-menu">
-                            <li>
+                            <li class="user-navigation-menu-item">
                                 <a class="user-navigation-menu-link" href="#"> Мои заказы </a>
                             </li>
-                            <li class="user-navigation-point"> </li>
-                            <li> 
-                                <a class="user-navigation-menu-link" href="#"> Личный кабинет </a>
+                            <li class="user-navigation-menu-item"> 
+                                <a class="user-navigation-menu-link" href="#"> Личный кабинет</a>
                             </li>
                         </ul>                          
                     </div>
@@ -116,18 +109,12 @@
                             </a>
                         </li>
                         <li class="breadcrumbs-item">
-                            <a class="breadcrumbs-link" href="catalog.html">
-                                Каталог
-                            </a>
+                            <a class="breadcrumbs-link" href="catalog.html"> Каталог </a>
                         </li>
                         <li class="breadcrumbs-item">
-                            <a class="breadcrumbs-link" href="#">
-                                Инструмент
-                            </a>
+                            <a class="breadcrumbs-link" href="#"> Инструмент </a>
                         </li>
-                        <li class="breadcrumbs-item breadcrumbs-current">
-                            Перфораторы
-                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-current"> Перфораторы </li>
                     </ul>
                 </div>
             </div>
@@ -149,77 +136,83 @@
                                     <div class="filter-by-price-range">
                                         <div class="filter-by-price-range-active"></div>
                                     </div>
-                                    <a class="filter-by-price-min" href=""></a>
-                                    <a class="filter-by-price-max" href=""></a>
+                                    <a class="filter-by-price-min" href="">
+                                        <span class="visually-hidden"> Минимальная цена </span>
+                                    </a>
+                                    <a class="filter-by-price-max" href="">
+                                        <span class="visually-hidden"> Максимальная цена </span>
+                                    </a>
                                 </div>
-                                <input class="filter-by-price-from" type="text" placeholder="0">
+                                <label class="visually-hidden" for="min"> Минимальная цена </label>
+                                <input class="filter-by-price-from" type="text" id="min" placeholder="0">
                                 <span class="filter-by-price-dash"></span>
-                                <input class="filter-by-price-to" type="text" placeholder="30000">
+                                <label class="visually-hidden" for="max"> Максимальная цена </label>
+                                <input class="filter-by-price-to" type="text" id="max" placeholder="30000">
                             </div>
                             <div class="filter-by-firm">
-                                <h2 class="form-filters-headline">Производители:</h2>
+                                <h2 class="form-filters-headline"> Производители: </h2>
                                 <ul class="filter-by-firm-list">
                                     <li class="filter-by-firm-item">
                                         <input class="filter-by-firm-item-input" type="checkbox" name="firm-Bosch" id="firmBosch" value="Bosch" checked>
-                                        <label class="filter-by-firm-item-label" for="firmBosch">Bosch</label>
+                                        <label class="filter-by-firm-item-label" for="firmBosch" tabindex="0"> Bosch </label>
                                     </li>
                                     <li class="filter-by-firm-item">
                                         <input class="filter-by-firm-item-input" type="checkbox" name="firm-Interskol" id="firmInterskol" value="Интерскол">
-                                        <label class="filter-by-firm-item-label" for="firmInterskol">Интерскол</label>
+                                        <label class="filter-by-firm-item-label" for="firmInterskol" tabindex="0"> Интерскол </label>
                                     </li>
                                     <li class="filter-by-firm-item">
                                         <input class="filter-by-firm-item-input" type="checkbox" name="firm-Makita" id="firmMakita" value="Makita" checked>
-                                        <label class="filter-by-firm-item-label" for="firmMakita">Makita</label>
+                                        <label class="filter-by-firm-item-label" for="firmMakita" tabindex="0"> Makita </label>
                                     </li>
                                     <li class="filter-by-firm-item">
                                         <input class="filter-by-firm-item-input" type="checkbox" name="firm-Dewalt" id="firmDewalt" value="Dewalt">
-                                        <label class="filter-by-firm-item-label" for="firmDewalt">Dewalt</label>
+                                        <label class="filter-by-firm-item-label" for="firmDewalt" tabindex="0"> Dewalt </label>
                                     </li>
                                     <li class="filter-by-firm-item">
                                         <input class="filter-by-firm-item-input" type="checkbox" name="firm-Hitachi" id="firmHitachi" value="Hitachi">
-                                        <label class="filter-by-firm-item-label" for="firmHitachi">Hitachi</label>
+                                        <label class="filter-by-firm-item-label" for="firmHitachi" tabindex="0"> Hitachi </label>
                                     </li>
                                 </ul>
                             </div>
                             <div class="filter-by-type">
-                                <h2 class="form-filters-headline">Питание:</h2>
+                                <h2 class="form-filters-headline"> Питание: </h2>
                                 <ul class="filter-by-type-list">
                                     <li class="filter-by-type-item">
                                         <input class="filter-by-type-item-input" type="radio" name="type" id="type-accum" value="Аккумуляторные" checked>
-                                        <label class="filter-by-type-item-label" for="type-accum">Аккумуляторные</label>
+                                        <label class="filter-by-type-item-label" for="type-accum" tabindex="0"> Аккумуляторные </label>
                                     </li>
                                     <li class="filter-by-type-item">
                                         <input class="filter-by-type-item-input" type="radio" name="type" id="type-network" value="Сетевые">
-                                        <label class="filter-by-type-item-label" for="type-network">Сетевые</label>
+                                        <label class="filter-by-type-item-label" for="type-network" tabindex="0"> Сетевые </label>
                                     </li>
                                 </ul>
                             </div>
-                            <button type="submit" class="filter-button">Показать</button>
+                            <button type="submit" class="filter-button"> Показать </button>
                         </form>
                     </aside>
                     <div class="catalog-right">
                         <div class="sorting">
-                            <span class="sorting-heading">Сортировка:</span>
+                            <span class="sorting-heading"> Сортировка: </span>
                             <ul class="sorting-parameters">
                                 <li class="sorting-parameters-item">
-                                    <a class="sorting-parameters-link sorting-by-price sorting-parameters-link-active" href="#">По цене</a>
+                                    <a class="sorting-parameters-link sorting-by-price sorting-parameters-link-active" href="#"> По цене </a>
                                 </li>
                                 <li class="sorting-parameters-item">
-                                    <a class="sorting-parameters-link sorting-by-type" href="#">По типу</a>
+                                    <a class="sorting-parameters-link sorting-by-type" href="#"> По типу </a>
                                 </li>
                                 <li class="sorting-parameters-item">
-                                    <a class="sorting-parameters-link sorting-by-function" href="#">По функционалу</a>
+                                    <a class="sorting-parameters-link sorting-by-function" href="#"> По функционалу </a>
                                 </li>
                             </ul>
                             <ul class="sorting-direction">
                                 <li>
                                     <a href="#" class="sorting-asc sorting-ask-active">
-                                        <span class="visually-hidden">По возрастанию</span>
+                                        <span class="visually-hidden"> По возрастанию </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="sorting-desc">
-                                        <span class="visually-hidden">По убыванию</span>
+                                        <span class="visually-hidden"> По убыванию </span>
                                     </a>
                                 </li>
                             </ul>
@@ -227,10 +220,10 @@
                         <ul class="catalog-list">
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
-                                    <h3 class="catalog-item-title">  Перфоратор BOSCH BFG 3000 </h3>
+                                    <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 3000 </h3>
                                 </a>
                                 <p class="catalog-item-action">
                                     <a class="catalog-item-action-buy" href="cart.html"> Купить </a>
@@ -243,7 +236,7 @@
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 6000 </h3>
@@ -259,7 +252,7 @@
                             </li>
                             <li class="catalog-item new-label">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 2000 </h3>  
@@ -274,7 +267,7 @@
                             </li> 
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 3000 </h3> 
@@ -290,7 +283,7 @@
                             </li>
                             <li class="catalog-item new-label">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 6000 </h3>
@@ -306,7 +299,7 @@
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 2000 </h3>
@@ -321,7 +314,7 @@
                             </li>
                             <li class="catalog-item new-label">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 3000 </h3> 
@@ -337,7 +330,7 @@
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 6000 </h3>
@@ -353,7 +346,7 @@
                             </li>
                             <li class="catalog-item">
                                 <a class="catalog-item-image" href="#">
-                                    <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+                                    <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
                                 </a>
                                 <a class="catalog-item-title-link" href="#">
                                     <h3 class="catalog-item-title"> Перфоратор BOSCH BFG 2000 </h3>
@@ -394,7 +387,7 @@
             <div class="footer-top">
                 <div class="footer-top-flex container">
                     <a class="footer-top-logo" href="index.html">
-                        <img class="footer-top-logo-img" src="img/footer-logo.svg" alt="Техномарт">
+                        <img class="footer-top-logo-img" src="img/footer-logo.svg" alt="Техномарт"  width="136" height="22">
                     </a>
                     <ul class="footer-top-nav">
                         <li>
