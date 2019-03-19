@@ -1590,7 +1590,6 @@ img {
     padding: 9px 10px 11px 10px;
     background-color: #f7f3ec;    
     border-style: none;
-    outline: none;
     border-radius: 3px;
     margin: 0 25px 25px 0;
 }
@@ -1614,7 +1613,6 @@ img {
     padding: 9px 10px 11px 10px;   
     background-color: #f7f3ec;
     border-style: none;
-    outline: none;
     border-radius: 3px;
     margin: 0 0 25px 0;
 }
@@ -1954,14 +1952,14 @@ img {
     padding: 9px 15px 10px 15px;
     margin-right: 10px;
     background-color: #ffffff;
-    border: 0.5px #e5e5e5 solid;
+    border: 0.5px solid #e5e5e5;
     border-radius: 3px;
 }
 
 .pagination-current {
     color: #ffffff;
     background-color: #ee3643;
-    border: 0.5px #ee3643 solid;
+    border-color: #ee3643;
 }
 
 .pagination-link:last-child {
@@ -1970,17 +1968,16 @@ img {
     text-align: center;
 }
 
-
 .pagination-link:hover {
     color: #000000;
     background-color: #ffffff;
-    border: 0.5px #bdc6ca solid;
+    border-color: #bdc6ca;
 }
 
 .pagination-link:active {
     color: #000000;
     background-color: #ffffff;
-    border: 0.5px #ee3643 solid;
+    border-color: #ee3643;
 }
 
 .info-about-perforator {
@@ -2009,7 +2006,6 @@ img {
     padding-bottom: 67px;
     margin: 0;
 }
-
 
 .footer-top {
     display: -webkit-box;
@@ -2524,16 +2520,16 @@ img {
 .modal-show {
     display: block;
     -webkit-animation-name: bounce;
-        animation-name: bounce;
+            animation-name: bounce;
     -webkit-animation-duration: 0.6s;
-        animation-duration: 0.6s;
+            animation-duration: 0.6s;
 }
 
 .modal-error {
     -webkit-animation-name: shake;
-        animation-name: shake;
+            animation-name: shake;
     -webkit-animation-duration: 0.6s;
-        animation-duration: 0.6s;
+            animation-duration: 0.6s;
 }
 
 .write-us {
