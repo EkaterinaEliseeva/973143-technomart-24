@@ -731,10 +731,6 @@ img {
     display: none;
 }
 
-.actual-list-slider-radio {
-    display: none;
-}
-
 .actual-list-slider-labels {
     position: absolute;
     display: -webkit-box;
@@ -845,7 +841,7 @@ img {
 }
 
 .popular-goods-headline {
-    margin: auto 29px;
+    margin: 4px 29px;
     width: 400px;
     font-size: 30px;
     line-height: 30px;
@@ -1075,7 +1071,7 @@ img {
 }
 
 .manufacturers-headline {
-    margin: auto 29px;
+    margin: 4px 29px;
     width: 400px;
     font-size: 30px;
     line-height: 30px;
@@ -1205,10 +1201,6 @@ img {
     background-position: 0 0;
 }
 
-.services-slider-radio {
-    display: none;
-}
-
 .services-slider-label {
     display: block;
     padding: 16px 0 16px 22px;
@@ -1222,7 +1214,7 @@ img {
 }
  
 .services-slider {
-    width: 700px;
+    width: 620px;
     position: relative;
     padding: 0 0 0 80px;
 }
@@ -1720,10 +1712,6 @@ img {
     background-image: url(../img/checkbox-hover-on.svg)
 }
 
-.filter-by-firm-item-input:focus ~ .filter-by-firm-item-label::before {
-    border-color: #c5c5c5;
-}
-
 .filter-by-type-list {
     font-size: 15px;
     line-height: 20px;
@@ -1775,8 +1763,8 @@ img {
 }
 /* Доступность формы */
 .visually-hidden:not(:focus):not(:active), 
-input[type=checkbox].visually-hidden, 
-input[type=radio].visually-hidden { 
+input[type="checkbox"].visually-hidden, 
+input[type="radio"].visually-hidden { 
     position: absolute; 
     width: 1px; 
     height: 1px; 
@@ -1792,7 +1780,12 @@ input[type=radio].visually-hidden {
 
 .filter-by-firm-item-input:focus ~ .filter-by-firm-item-label,
 .filter-by-type-item-input:focus ~ .filter-by-type-item-label { 
-    border: 1px solid #e5e5e5;
+    outline: 3px solid #f2f6f8;
+} 
+
+.actual-list-slider-radio:focus ~ .actual-list-slider-labels .actual-list-slider-label,
+.services-slider-radio:focus ~ .services-slider-button .services-slider-label { 
+    outline: 2px solid #c5c5c5;
 } 
 
 .filter-button {

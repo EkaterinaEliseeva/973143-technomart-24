@@ -82,7 +82,7 @@ if (mapIframe) {
         evt.preventDefault();
         mapPopup.classList.add("modal-show");
         });
-}
+};
 
 if (mapClose) mapClose.addEventListener("click", function(evt) {
     evt.preventDefault();

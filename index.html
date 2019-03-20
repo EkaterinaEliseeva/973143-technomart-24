@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/min-styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic">
     </head>
     <body>
@@ -16,7 +16,9 @@
                     </a>
                     <form class="form-search" action="#" method="get" enctype="multipart/form-data">
                         <input type="search" id="search-form" class="form-search-input" placeholder="Поиск:">
-                        <label class="form-search-label" for="search-form"></label>
+                        <label class="form-search-label" for="search-form">
+                            <span class="visually-hidden"> Форма поиска </span>
+                        </label>
                     </form>
                     <a class="header-bookmarks" href="#"> Закладки: 0 </a>
                     <a class="header-cart" href="#"> Корзина: 0 </a>
@@ -38,7 +40,7 @@
                     </div>
                     <div class="user-navigation">
                         <a class="user-navigation-login" href="#">
-                            <svg class="user-navigation-login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path class="user-navigation-fill" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="user-navigation-fill" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                            <svg class="user-navigation-login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" alt="Иконка входа"><path class="user-navigation-fill" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="user-navigation-fill" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
                             <span class="user-navigation-login-text"> Войти </span>
                         </a>
                         <a class="user-navigation-registration" href="#"> Регистрация </a>
@@ -92,11 +94,15 @@
                         <a class="actual-list-item-link" href="#"> Для стройки </a>
                     </div>
                     <div class="actual-list-slider-block">
-                        <input class="actual-list-slider-radio" type="radio" name="actual-slider" id="perforator" checked>
-                        <input class="actual-list-slider-radio" type="radio" name="actual-slider" id="drill">
+                        <input class="actual-list-slider-radio visually-hidden" type="radio" name="actual-slider" id="perforator" checked>
+                        <input class="actual-list-slider-radio visually-hidden" type="radio" name="actual-slider" id="drill">
                         <div class="actual-list-slider-labels">
-                            <label class="actual-list-slider-label" for="perforator"></label>
-                            <label class="actual-list-slider-label" for="drill"></label>
+                            <label class="actual-list-slider-label" for="perforator">
+                                <span class="visually-hidden"> Слайд перфораторы </span>
+                            </label>
+                            <label class="actual-list-slider-label" for="drill">
+                                <span class="visually-hidden"> Слайд дрели </span>
+                            </label>
                         </div>
                         <div class="actual-list-slider">
                             <div class="actual-list-slide">
@@ -281,13 +287,13 @@
                         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                     </p>
                     <div class="services-slider-block">
-                        <input class="services-slider-radio" type="radio" name="service-slide" id="tab1" checked>
-                        <input class="services-slider-radio" type="radio" name="service-slide" id="tab2">
-                        <input class="services-slider-radio" type="radio" name="service-slide" id="tab3">
+                        <input class="services-slider-radio visually-hidden" type="radio" name="service-slide" id="tab1" checked>
+                        <input class="services-slider-radio visually-hidden" type="radio" name="service-slide" id="tab2">
+                        <input class="services-slider-radio visually-hidden" type="radio" name="service-slide" id="tab3">
                         <div class="services-slider-button">
-                            <label class="services-slider-label" for="tab1" tabindex="0"> Доставка </label>      
-                            <label class="services-slider-label" for="tab2" tabindex="0"> Гарантия </label>
-                            <label class="services-slider-label" for="tab3" tabindex="0"> Кредит </label>
+                            <label class="services-slider-label" for="tab1"> Доставка </label>      
+                            <label class="services-slider-label" for="tab2"> Гарантия </label>
+                            <label class="services-slider-label" for="tab3"> Кредит </label>
                         </div>
                         <div class="services-slider">
                             <div class="services-slide">
@@ -429,7 +435,7 @@
         </footer>
         <div class="modal modal-map modal-map-img">
             <button type="button" class="modal-map-close" aria-label="Закрыть карту"></button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="940" height="446" class="modal-map-iframe visually-hidden" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549739856722" width="940" height="446" class="modal-map-iframe visually-hidden" title="Карта" allowfullscreen></iframe>
         </div>
         <div class="modal modal-write-us">
             <button type="button" class="modal-write-us-close" aria-label="Закрыть форму"></button>   
@@ -447,6 +453,6 @@
                 </div>
             </form>
         </div>
-        <script src="js/script.js"> </script>
+        <script src="js/min-script.js"> </script>
     </body>
 </html>
